@@ -13,76 +13,99 @@
   <body>
 
     <header>
-      <h1>Charlotte Junker</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-      <div class="profile-card">
-        <img src="img/profilephoto.jpg" alt="profile photo" class="profile">
+      <div class="main-header">
+        <h1>Charlotte Junker</h1>
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </header>
+
+    <div class="profile-card">
+      <img src="img/profilephoto.jpg" alt="profile photo" class="profile">
       <p>Hi. I'm learning front-end development including responsive design and CSS. This project aims to showcase the skills I've developed on the Techdegree so far.</p>
+    </div>
 
-      <h2 id="portfolio">Portfolio </h2>
+    <div class="portfolio">
 
-        <h3>Marketing Page</h3>
-          <img src="img/marketing.png" alt="Screengrab of marketing page">
-          <p>This project shows the front page of a marketing website meant for my local craft shop.</p>
+      <h2 id="portfolio" class="subheading">Portfolio </h2>
 
-        <h3>Search Page</h3>
-          <img src="img/search.png" alt="Screengrab of search page">
-          <p>This project allows a user to look up specific information - it searches through a database.</p>
+      <img src="img/marketing.png" alt="Screengrab of marketing page">
+      <h3>Marketing Page</h3>
+      <p>This project shows the front page of a marketing website meant for my local craft shop.</p>
 
-        <h3>Travel App</h3>
-          <img src="img/travel.png" alt="Screengrab of travel app">
-          <p>This project compares travel times based on buses and Tubes and tells you the best route.</p>
+      <img src="img/search.png" alt="Screengrab of search page">
+      <h3>Search Page</h3>
+      <p>This project allows a user to look up specific information - it searches through a database.</p>
 
-        <h3>Map of Favourite Spots</h3>
-          <img src="img/map.png" alt="Screengrab of map of my favourite spots">
-          <p>This project uses mapping APIs to plot the points of my favourite spots in London, for a DIY walking tour.</p>
+      <img src="img/travel.png" alt="Screengrab of travel app">
+      <h3>Travel App</h3>
+      <p>This project compares travel times based on buses and Tubes and tells you the best route.</p>
 
-        <h3>Photo Gallery</h3>
-          <img src="img/photo.png" alt="Screengrab of photo gallery">
-          <p>This project shows pictures from my trip to Japan and allows the viewer to easily navigate the images.</p>
+      <img src="img/map.png" alt="Screengrab of map of my favourite spots">
+      <h3>Map of Favourite Spots</h3>
+      <p>This project uses mapping APIs to plot the points of my favourite spots in London, for a DIY walking tour.</p>
 
-        <h3>Videos</h3>
-          <img src="img/video.png" alt="Screengrab of video gallery">
-          <p>This project collates my favourite videos from Youtube onto one gallery-style page.</p>
+      <img src="img/photo.png" alt="Screengrab of photo gallery">
+      <h3>Photo Gallery</h3>
+      <p>This project shows pictures from my trip to Japan and allows the viewer to easily navigate the images.</p>
 
-        <h3>Calculator</h3>
-          <img src="img/calculator.png" alt="Screengrab of calculator">
-          <p>The user can enter numbers and get the result by pressing the blue button. </p>
+      <img src="img/video.png" alt="Screengrab of video gallery">
+      <h3>Videos</h3>
+      <p>This project collates my favourite videos from Youtube onto one gallery-style page.</p>
 
-          <h3>Stickies</h3>
-            <img src="img/stickies.png" alt="Screengrab of stickies">
-            <p>This project allows the user to create sticky notes for a to-do list or as reminders.</p>
-      <div class="skills">
-        <h2 id="skills">Skills</h2>
-          <p>I have 35 Treehouse achievements so far.</p>
-          <p>My 5 most recent Treehouse badges:</p>
-          <ul class="badges">
-            <li class="badge-1"><b>Art Direction with the Picture Element</b> in Responsive Images</li>
-            <li class="badge-2"><b>Image Delivery with Srcset and Sizes</b> in Responsive Images</li>
-            <li class="badge-3"><b>Positioning Page Content</b> in CSS Layout Basics</li>
-            <li class="badge-4"><b>CSS Layout Project</b> in CSS Layout Basics</li>
-            <li class="badge-5"><b>Page Layout with the Float Property</b> in CSS Layout Basics</li>
-          </ul>
-        </div>
+      <img src="img/calculator.png" alt="Screengrab of calculator">
+      <h3>Calculator</h3>
+      <p>The user can enter numbers and get the result by pressing the blue button. </p>
 
-      <h2 id="contact">Contact</h2>
-          <p>If you're interested in finding out more about my work, I'd love to hear from you.</p>
+      <img src="img/stickies.png" alt="Screengrab of stickies">
+      <h3>Stickies</h3>
+      <p>This project allows the user to create sticky notes for a to-do list or as reminders.</p>
 
-          <ul>
-            <li><a href="mailto:cejunker@gmail.com">Email <b>cejunker@gmail.com</b></a></li>
-            <li><a href="http://github.com/charlottejunker">Github <b>charlottejunker</b></a></li>
-          </ul>
+    </div>
 
-    <footer>
-      <p>Charlotte Junker</p>
+    <div class="skills">
+
+      <h2 id="skills" class="subheading">Skills</h2>
+
+      <div class="wrapper">
+
+        <p>I have <b>35</b> Treehouse achievements so far. My most recent badges are...</p>
+
+        <ul class="badges">
+          <li class="badge-1"><b>Art Direction with the Picture Element</b> in Responsive Images</li>
+          <li class="badge-2"><b>Image Delivery with Srcset and Sizes</b> in Responsive Images</li>
+          <li class="badge-3"><b>Positioning Page Content</b> in CSS Layout Basics</li>
+          <li class="badge-4"><b>CSS Layout Project</b> in CSS Layout Basics</li>
+          <li class="badge-5"><b>Page Layout with the Float Property</b> in CSS Layout Basics</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="contact">
+
+      <h2 id="contact" class="subheading">Contact</h2>
+
+      <p>If you're interested in finding out more about my work, I'd love to hear from you.</p>
+
+      <ul>
+        <li>Email<a href="mailto:cejunker@gmail.com"><b>cejunker@gmail.com</b></a></li>
+        <li>Github<a href="http://github.com/charlottejunker"><b>charlottejunker</b></a></li>
+      </ul>
+
+    </div>
+
+    <footer class="footer">
+      <p class="footer-name">Charlotte Junker</p>
+
+      <!-- mobile layout -->
       <a href="#" class="mobile-footer">BACK TO TOP</a>
+
+      <!-- larger screens -->
       <ul class="tablet-desktop-footer">
         <li><a href="#">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>

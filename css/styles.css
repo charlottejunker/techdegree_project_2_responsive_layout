@@ -1,12 +1,20 @@
 /* main styles*/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  background: #f7f5f0;
+  background: #f0f2f7;
   text-align: center;
-  width: 90%;
+  color: #242d42;
+}
+
+h1 {
+  color: #5b6fa4;
 }
 
 ul {
@@ -21,21 +29,95 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #242d42;
+}
+
+a:hover {
+  color: #9ca9c9;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+.portfolio, .contact, .footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* header  */
+
+.main-header {
+  margin: 0 auto;
+}
+
+.nav a {
+  /*background-color: #fff;*/
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  width: 90%;
+}
+
 /* home section */
 
 .profile-card {
-  background-color: #fff;
-  margin-top: 20px;
+  background-color: #9ca9c9;
+  margin-top: 2.5em;
+  min-width: 100%;
 }
+
+.profile-card p {
+  margin: 0;
+  padding: 0 1em 2em;
+}
+
 .profile {
   border-radius: 100%;
   width: 50%;
-  padding: 1em 0;
+  padding: 2em 0 1em;
+}
+
+/* portfolio section*/
+
+.portfolio {
+  padding: 2.5em 0 0;
+}
+
+.portfolio p {
+  padding: 0 0 2em;
 }
 
 /* skills section */
 
-.skills p, .skills li{
+.skills {
+  background-color: #9ca9c9;
+  padding: 2.5em 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skills ul {
+  padding: .5em 0 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skills li {
   text-align: left;
 }
 
@@ -44,8 +126,8 @@ img {
   min-height: 40px;
   background-repeat: no-repeat;
   background-size: 40px 40px;
-  padding: 0 0 0 50px;
-  margin: 0 0 20px;
+  padding: 0 0 0 70px;
+  margin: 20px 0 0;
   font-size: .8em;
 }
 
@@ -69,8 +151,37 @@ img {
   background-image: url('../img/float_badge.png');
 }
 
+/* contact */
+
+.contact {
+  padding: 2.5em 0;
+  border-bottom: solid 1px #9ca9c9;
+}
+
+.contact ul li a {
+  margin-left: 1em;
+}
+
 /* footer */
+
+.footer {
+  padding: 1em 0;
+  margin-bottom: 2em;
+  font-weight: 700;
+  font-size: .8em;
+}
 
 .tablet-desktop-footer {
   display: none;
+}
+
+.footer-name {
+  display: inline-block;
+  float: left;
+  margin: 0;
+}
+
+.mobile-footer {
+  display: inline-block;
+  float: right;
 }
