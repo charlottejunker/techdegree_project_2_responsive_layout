@@ -41,14 +41,7 @@ a:hover {
   color: #9ca9c9;
 }
 
-.subheading {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1em;
-  padding-bottom: 1em;
-}
-
-.portfolio, .contact, .footer {
+.main-header, .portfolio, .contact, .footer {
   width: 90%;
   margin: 0 auto;
 }
@@ -56,7 +49,7 @@ a:hover {
 /* header  */
 
 .main-header {
-  margin: 0 auto;
+  margin: 0 auto 1em;
 }
 
 .nav a {
@@ -68,25 +61,27 @@ a:hover {
   text-decoration: none;
   font-weight: 700;
   width: 90%;
+  font-size: 1em;
 }
 
 /* home section */
 
 .profile-card {
   background-color: #9ca9c9;
-  margin-top: 2.5em;
-  min-width: 100%;
-}
-
-.profile-card p {
-  margin: 0;
-  padding: 0 1em 2em;
+  padding: 1em;
 }
 
 .profile {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+.profile-photo {
   border-radius: 100%;
   width: 50%;
-  padding: 2em 0 1em;
+  max-width: 250px;
+  padding: 1em 0;
 }
 
 /* portfolio section*/
@@ -97,6 +92,13 @@ a:hover {
 
 .portfolio p {
   padding: 0 0 2em;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  padding-bottom: 1em;
 }
 
 /* skills section */
@@ -156,6 +158,11 @@ a:hover {
 .contact {
   padding: 2.5em 0;
   border-bottom: solid 1px #9ca9c9;
+  font-size: 1.1em;
+}
+
+.contact ul li {
+  padding-top: 1.5em;;
 }
 
 .contact ul li a {
@@ -184,4 +191,124 @@ a:hover {
 .mobile-footer {
   display: inline-block;
   float: right;
+  margin: 0;
+}
+
+
+/* media queries */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* tablet nav */
+
+  .nav li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+
+  /* tablet profile */
+
+  .profile-card {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-photo {
+    padding: 0;
+    height: 160px;
+    width: 160px;
+    margin: 0 2em;
+  }
+
+  /* tablet portfolio */
+
+  .portfolio {
+  }
+
+  .portfolio div {
+    display: inline-block;
+    width: 45%;
+    margin: 2.3%;
+    vertical-align: top;
+  }
+
+  /* tablet skills */
+
+  .badges {
+    text-align: left;
+  }
+  .badges li {
+    display: inline-block;
+    width: 25%;
+    margin: 3%;
+    vertical-align: text-top;
+  }
+
+  /* tablet footer */
+
+  .mobile-footer {
+    display: none;
+  }
+
+  .footer {
+    padding-bottom: 2em;
+  }
+
+  .footer-name {
+    margin-top: 10px;
+  }
+
+  .tablet-desktop-footer {
+    display: block;
+    float: right;
+  }
+
+  .tablet-desktop-footer li  {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* desktop nav */
+
+  .main-header h1 {
+    float: left;
+  }
+
+  .nav {
+    float: right;
+    margin-top: 10px;
+  }
+
+  /* desktop portfolio */
+
+  .portfolio div {
+    width: 28%;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+
+  /* large desktop portfolio */
+
+  .portfolio div {
+    width: 20%;
+  }
+
+  /* large desktop skills */
+
+  .badges li {
+    width: 15%;
+    margin: 2%;
 }
